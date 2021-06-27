@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -87,6 +89,7 @@ h6 {
 }
 
 /*---------------------*/
+/*базовые настройки сетки*/
 .container {
   max-width: 1170px;
   margin: auto;
