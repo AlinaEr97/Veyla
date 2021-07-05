@@ -1,14 +1,10 @@
 .hero {
 	padding-top: 100px;
-	&__container {
-		background-color: #E1E5F0 ;
-	}
-
+	
 	&__wrapper {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: space-between;
-		min-height: 100px;
 		margin: 0 auto;	
 	}
 
@@ -17,29 +13,28 @@
 	}
 
 	&__bg {
-	display: block;
-	background: url('../img/hero/hero-bg.jpg') no-repeat right;
-	background-size: contain;
-	width: 800px;
-	height: 434px;
-	box-shadow: -10px 0 30px 0px rgba(117, 116, 116, 0.5);
-	padding: 0;
-	
+		display: block;
+		padding: 0;
+		width: 800px;
+		min-height: 434px;
+	}
+
+	&__image {
+		max-width: 100%;
+		box-shadow: -10px 0 30px 0px rgba(117, 116, 116, 0.5);
 	}
 
 }
 
 .offer {
-	max-width: 500px;
 	margin-left: 50px;
 	line-height: 1.5;
 
 	&__text {
 		font-size: 30px;
 		font-weight: bold;
-		margin-bottom: 40px;
+		margin: 120px 0px 40px 0px;
 		color: #0f1c30;
-	
 	}
 
 	&__button {
@@ -50,6 +45,145 @@
 		}
 		&:active {
 			border: none;
+		}
+	}
+}
+
+@media (max-width: 1160px) {
+	.offer {
+		
+		&__text {
+			font-size: 22px;
+		}
+
+		&__button {
+			margin-left: 30px;
+			font-size: 12px;
+			padding: 13px 18px;
+			&:active {
+				padding: 10px 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.offer {
+		
+		&__text {
+			font-size: 22px;
+		}
+
+		&__button {
+			margin-left: 30px;
+			font-size: 12px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.offer {
+		
+		&__text {
+			margin-top: 80px;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.offer {
+		margin-left: 20px;
+
+		&__text {
+			font-size: 18px;
+			margin-top: 60px;
+		}
+
+		&__button {
+			margin-left: 0;
+			font-size: 10px;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.hero {
+
+		&__bg {
+			width: 500px;
+		}
+	}
+
+	.offer {
+		margin-left: 30px;
+		&__text {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+
+		&__button {
+			font-size: 10px;
+			padding: 10px 15px;
+			&:active {
+				padding: 8px 13px;
+			}
+		}
+	}
+}
+
+@media (max-width: 570px) {
+	.offer {
+		margin-left: 10px;
+		&__text {
+			font-size: 12px;
+			margin-top: 35px;
+		}
+
+		&__button {
+			font-size: 8px;
+			padding: 8px 13px;
+			&:active {
+				padding: 7px 12px;
+			}
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.hero {
+
+		&__bg {
+			width: 350px;
+		}
+	}
+}
+
+@media (max-width: 380px) {
+	.hero {
+		&__bg {
+			width: 250px;
+			height: 350px;
+		}
+
+		&__image {
+			height: 350px;
+			object-fit: cover;
+			object-position: left;
+		}
+	}
+
+	.offer {
+		&__text {
+			font-size: 14px;
+			margin: 100px 0px 40px 0px;
+		}
+
+		&__button {
+			font-size: 10px;
+			padding: 10px 15px;
+			&:active {
+				padding: 9px 14px;
+			}
 		}
 	}
 }

@@ -6,6 +6,7 @@
 	z-index: 99;
 
 	&__container {
+		min-height: 100px;
 		background-color: rgb(239, 228, 245);
 		border-bottom: 1px solid rgb(171, 171, 173);
 	}
@@ -14,7 +15,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		min-height: 100px;
 		max-width: 80%;
 		margin: 0 auto;	
 	}
@@ -32,7 +32,6 @@
 	}
 
 	&__button {
-
 		border: 2px solid #264981;
 		font-size: 14px;
 		text-transform: uppercase;
@@ -40,13 +39,14 @@
 		color: #264981;
 		padding: 17px 22px;
 		background-color: rgb(255, 255, 255);
+
 		&:hover {
-			border-color: #3557c5;
-			background-color:  #264981;
+			border-color: #264981;
+			background-color:  #3250b6;
 			color: #ffffff;
 		}
 		&:active {
-			border: 5px solid #3557c5;
+			border: 5px solid #264981;
 			padding: 14px 19px;
 			transition: all .1s;
 		}
@@ -107,11 +107,9 @@
 	padding: 16px 0;
 	background-color: #2a087a;	
 	color: white;
-	transform: translateY(-100%);
+	transform: translateY(-200%);
 	
-	&_active {
-		transform: translateY(0);
-	}
+	
 
 	&__nav {
 		display: flex;
@@ -124,5 +122,97 @@
 		text-transform: uppercase;
 		color: white;
 	}
+}
 
+@media (max-width: 991px) {
+	.navbar {
+		&__phone, &__working-time {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.navbar {
+
+		&_container {
+			min-height: 80px;
+		}
+
+		&__wrapper {
+			justify-content: space-around;
+		}
+
+		&__logo {
+			display: none;
+		}
+
+		&__button {
+			font-size: 10px;
+		}
+		
+	}
+
+	.menu {
+		top: 60px;
+
+		&__nav {
+			flex-direction: column;
+			padding-top: 20px;
+		}
+
+		&__link {
+			margin-bottom: 20px;
+		}
+	}
+
+	.menu-burger {
+		height: 70px;
+		width: 30px;
+	
+		&__line {
+			width: 30px;
+			height: 3px;
+			margin: 3px 0;
+		}
+	}
+
+}
+
+@media (max-width: 600px) {
+	.navbar {
+		&__container {
+			min-height: 70px;
+		}
+
+		&__button {
+			border: 2px solid #264981;
+			font-size: 10px;
+			text-transform: uppercase;
+			font-weight: bold;
+			color: #264981;
+			padding: 13px 18px;
+			background-color: rgb(255, 255, 255);
+
+			&:hover {
+				border-color: #264981;
+				background-color:  #3250b6;
+				color: #ffffff;
+			}
+			&:active {
+				border: 3px solid #264981;
+				padding: 10px 15px;
+				transition: all .1s;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.navbar {
+
+		.menu-burger {
+			margin-left: 0;
+		}
+	}
 }
