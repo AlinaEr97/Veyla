@@ -1,3 +1,17 @@
-@import "null";
+//Базовые настройки сетки
 @import "grid";
+
+//Шапка
 @import "sections/navbar";
+
+//Шрифты
+@import "fonts";
+
+//Общие натройки контента
+@import "body";
+
+//Цвет текста
+@import "colors";
+
+//Главный блок
+@import "sections/hero";
