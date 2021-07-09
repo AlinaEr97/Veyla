@@ -1,12 +1,13 @@
 .application {
-	background: radial-gradient(#ffffff, #ffffff, #efdff3);
-	width: 700px;
+	max-width: 100%;
 	margin-left: 80px;
+	margin-right: 80px;
 	color: #192c49;
 
-
 	&__wrapper {
-		padding: 40px 80px 10px;
+		max-width: 1000px;
+		background: #efe6f1 url('../img/application/application-bg.png') no-repeat center right;
+		padding: 40px 80px 10px 80px;
 		box-shadow: 10px 0 30px 0px rgba(117, 116, 116, 0.5);
 	}
 
@@ -24,19 +25,14 @@
 		font-size: 22px;
 		font-weight: bold;
 	}
-
-	&__form {
-		display: flex;
-		flex-direction: row;
-		font-size: 20px;
-	}
 }
 
 .form {
 	display: flex;
 	flex-direction: row;
+
 	&__column {
-		margin-right: 100px;
+		margin-right: 60px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -61,18 +57,13 @@
 	&__select {
 		border: 1px solid rgb(98, 98, 138);
 		height: 30px;
-		width: 198px;
+		max-width: 198px;
 		font-size: 16px;
 		font-family: 'Open Sans Regular', sans-serif;
 		&:focus {
 			box-shadow: 0 0 5px 2px #3250b6, 0 0 5px 2px #264981;
 			background: linear-gradient(180deg, #e3dbf3, #ffffff, #e3dbf3);
 		}
-	}
-
-	&__option {
-	
-	
 	}
 
 	&__group {
@@ -82,5 +73,43 @@
 	&__button {
 		margin-left: 0;
 		margin-top: 35px;
+		border: none;
+		&:active {
+			border: none;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.form {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px) {
+	.application {
+		margin-left: 0;
+		max-width: 500px;
+		margin-top: -80px;
+		
+		&__wrapper {
+			padding: 40px 40px 10px;
+			background-image: none;
+		}
+	}
+	.form {
+		width: 400px;
+	}
+}
+
+@media (max-width: 650px) {
+	.application {
+		margin-top: -120px;
+	}
+}
+
+@media (max-width: 500px) {
+	.application {
+		margin-top: 0;
 	}
 }
