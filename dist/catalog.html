@@ -18,22 +18,19 @@
 			<div class="header-catalog__wrapper">
 
 				<div class="header-catalog__logo logo">
-					<strong class="logo__text">Veyla</strong>
+					<a href="index.html"><strong class="logo__text">Veyla</strong></a>
 					<div class="logo__description">волшебство на Вашей кухне</div>
 				</div>
 					<h2 class="logo__title">Наши кухни</h2>
 			
 			</div>
 			
-
 			<nav class="header-catalog__breadcrumbs breadcrumbs">
 				<ul class="breadcrumbs__nav">
 					<li class="breadcrumbs__crumb"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
 					<li class="breadcrumbs__crumb"><a class="breadcrumbs__link current" href="#">Каталог</a></li>
 				</ul>
 			</nav>
-
-		
 
 		</div>
 		<!-- /.header-catalog__container -->
@@ -46,16 +43,31 @@
 		<div class="catalog">
 
 			<nav class="catalog__nav nav-catalog">
-				<span class="nav-catalog__link nav-catalog_list-active">Все кухни</span>
-				<span class="nav-catalog__link">Угловые кухни</span>
-				<span class="nav-catalog__link">Прямые кухни</span>
-				<span class="nav-catalog__link">С барной стойкой</span>
+				<div class="nav-catalog__box">
+					<input type="radio" name="menus" id="all-list" class="nav-catalog__radio-btn" checked> 
+					<label class="nav-catalog__radio" for="all-list">Все кухни</label> 
+				</div>
+
+				<div class="nav-catalog__box">
+					<input type="radio" name="menus" id="direct-list" class="nav-catalog__radio-btn"> 
+					<label class="nav-catalog__radio" for="direct-list">Прямые</label> 
+				</div>
+
+				<div class="nav-catalog__box">
+					<input type="radio" name="menus" id="corner-list" class="nav-catalog__radio-btn"> 
+					<label class="nav-catalog__radio" for="corner-list">Угловые</label> 
+				</div>
+
+				<div class="nav-catalog__box">
+					<input type="radio" name="menus" id="bar-list" class="nav-catalog__radio-btn"> 
+					<label class="nav-catalog__radio" for="bar-list">С барной стойкой</label> 
+				</div>
 			</nav>
 
 			<div class="catalog__wrapper">
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#neon" id="bar">
+				<div class="catalog__kitchen-offer kitchen-offer" id="bar">
+					<a class="kitchen-offer__block" href="#neon">
 						<img class="kitchen-offer__image" src="img/catalog/c1.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -63,15 +75,15 @@
 								<span class="kitchen-offer__name">Неон</span>
 							</div>
 							<div class="kitchen-offer__price">
-								<span class="kitchen-offer__old-price">Старая цена: <span class="kitchen-offer__false-number">&nbsp;98500</span></span>
-								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;33490</span></span>
+								<span class="kitchen-offer__old-price">Старая цена: <span class="kitchen-offer__false-number">&nbsp;120500</span></span>
+								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;55490</span></span>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#standart" id="bar">
+				<div class="catalog__kitchen-offer kitchen-offer" id="bar">
+					<a class="kitchen-offer__block" href="#standart">
 						<img class="kitchen-offer__image" src="img/catalog/c2.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -87,8 +99,8 @@
 					</a>
 				</div>
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#dorry" id="direct">
+				<div class="catalog__kitchen-offer kitchen-offer" id="direct">
+					<a class="kitchen-offer__block" href="#dorry">
 						<img class="kitchen-offer__image" src="img/catalog/c3.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -97,15 +109,15 @@
 							</div>
 							<div class="kitchen-offer__price">
 								<span class="kitchen-offer__old-price">
-									Старая цена: <span class="kitchen-offer__false-number">112500</span></span>
-								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
+									Старая цена: <span class="kitchen-offer__false-number">84500</span></span>
+								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;33690</span></span>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#savanna" id="direct">
+				<div class="catalog__kitchen-offer kitchen-offer" id="direct">
+					<a class="kitchen-offer__block" href="#savanna">
 						<img class="kitchen-offer__image" src="img/catalog/c4.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -114,15 +126,15 @@
 							</div>
 							<div class="kitchen-offer__price">
 								<span class="kitchen-offer__old-price">
-									Старая цена: <span class="kitchen-offer__false-number">112500</span></span>
-								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
+									Старая цена: <span class="kitchen-offer__false-number">80200</span></span>
+								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;31890</span></span>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#scarlett" id="direct">
+				<div class="catalog__kitchen-offer kitchen-offer" id="direct">
+					<a class="kitchen-offer__block" href="#scarlett">
 						<img class="kitchen-offer__image" src="img/catalog/c5.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -131,15 +143,15 @@
 							</div>
 							<div class="kitchen-offer__price">
 								<span class="kitchen-offer__old-price">
-									Старая цена: <span class="kitchen-offer__false-number">112500</span></span>
-								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
+									Старая цена: <span class="kitchen-offer__false-number">89400</span></span>
+								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;42600</span></span>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#shale" id="direct">
+				<div class="catalog__kitchen-offer kitchen-offer" id="direct">
+					<a class="kitchen-offer__block" href="#shale">
 						<img class="kitchen-offer__image" src="img/catalog/c6.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -148,15 +160,15 @@
 							</div>
 							<div class="kitchen-offer__price">
 								<span class="kitchen-offer__old-price">
-									Старая цена: <span class="kitchen-offer__false-number">112500</span></span>
-								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
+									Старая цена: <span class="kitchen-offer__false-number">83500</span></span>
+								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;40200</span></span>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#victoria" id="corner">
+				<div class="catalog__kitchen-offer kitchen-offer" id="corner">
+					<a class="kitchen-offer__block" href="#victoria">
 						<img class="kitchen-offer__image" src="img/catalog/c7.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -165,15 +177,15 @@
 							</div>
 							<div class="kitchen-offer__price">
 								<span class="kitchen-offer__old-price">
-									Старая цена: <span class="kitchen-offer__false-number">112500</span></span>
-								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
+									Старая цена: <span class="kitchen-offer__false-number">94800</span></span>
+								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;57790</span></span>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#melange" id="corner">
+				<div class="catalog__kitchen-offer kitchen-offer" id="corner">
+					<a class="kitchen-offer__block" href="#melange">
 						<img class="kitchen-offer__image" src="img/catalog/c8.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -182,15 +194,15 @@
 							</div>
 							<div class="kitchen-offer__price">
 								<span class="kitchen-offer__old-price">
-									Старая цена: <span class="kitchen-offer__false-number">112500</span></span>
-								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
+									Старая цена: <span class="kitchen-offer__false-number">88300</span></span>
+								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;42600</span></span>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#rosinka" id="corner">
+				<div class="catalog__kitchen-offer kitchen-offer" id="corner">
+					<a class="kitchen-offer__block" href="#rosinka">
 						<img class="kitchen-offer__image" src="img/catalog/c9.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -199,15 +211,15 @@
 							</div>
 							<div class="kitchen-offer__price">
 								<span class="kitchen-offer__old-price">
-									Старая цена: <span class="kitchen-offer__false-number">112500</span></span>
-								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
+									Старая цена: <span class="kitchen-offer__false-number">94200</span></span>
+								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;50690</span></span>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#vector" id="corner">
+				<div class="catalog__kitchen-offer kitchen-offer" id="corner">
+					<a class="kitchen-offer__block" href="#vector">
 						<img class="kitchen-offer__image" src="img/catalog/c10.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -216,15 +228,15 @@
 							</div>
 							<div class="kitchen-offer__price">
 								<span class="kitchen-offer__old-price">
-									Старая цена: <span class="kitchen-offer__false-number">112500</span></span>
-								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
+									Старая цена: <span class="kitchen-offer__false-number">97390</span></span>
+								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;54600</span></span>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#classic" id="corner">
+				<div class="catalog__kitchen-offer kitchen-offer" id="bar">
+					<a class="kitchen-offer__block" href="#classic">
 						<img class="kitchen-offer__image" src="img/catalog/c11.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -233,15 +245,15 @@
 							</div>
 							<div class="kitchen-offer__price">
 								<span class="kitchen-offer__old-price">
-									Старая цена: <span class="kitchen-offer__false-number">112500</span></span>
-								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
+									Старая цена: <span class="kitchen-offer__false-number">103500</span></span>
+								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;62090</span></span>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="catalog__kitchen-offer kitchen-offer">
-					<a class="kitchen-offer__block" href="#lira" id="corner">
+				<div class="catalog__kitchen-offer kitchen-offer" id="corner">
+					<a class="kitchen-offer__block" href="#lira">
 						<img class="kitchen-offer__image" src="img/catalog/c12.jpg" alt="">
 						<div class="kitchen-offer__container">
 							<div class="kitchen-offer__text">
@@ -250,8 +262,8 @@
 							</div>
 							<div class="kitchen-offer__price">
 								<span class="kitchen-offer__old-price">
-									Старая цена: <span class="kitchen-offer__false-number">112500</span></span>
-								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
+									Старая цена: <span class="kitchen-offer__false-number">99390</span></span>
+								<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;55900</span></span>
 							</div>
 						</div>
 					</a>
@@ -264,6 +276,9 @@
 
 	</main>
 	<script type="text/javascript" src="https://spikmi.com/Widget?Id=6255"></script>
+	<!-- Подключение виджета обратной связи, соцсети -->
+	<script src="js/main.min.js"></script>
+
 </body>
 
 </html>
