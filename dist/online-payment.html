@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Оплата на сайте</title>
 	<link rel="stylesheet" href="css/style.min.css">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/img/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
 
@@ -22,7 +41,7 @@
 						<a href="about.html" class="menu__link">O нас</a>
 						<a href="delivery.html" class="menu__link">Доставка и сборка</a>
 						<a href="payment.html" class="menu__link">Оплата</a>
-						<a href="#" class="menu__link">Контакты</a>
+						<a href="contacts.html" class="menu__link">Контакты</a>
 					</nav>
 					<!-- /.menu__nav -->
 
@@ -64,15 +83,123 @@
 		<!-- /.header-catalog -->
 
 		<nav class="breadcrumbs breadcrumbs_about">
-			<ul class="breadcrumbs__nav">
-				<li class="breadcrumbs__crumb"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-				<li class="breadcrumbs__crumb"><a class="breadcrumbs__link" href="payment.html">Оплата</a></li>
-				<li class="breadcrumbs__crumb"><a class="breadcrumbs__link current" href="#">Оплата на сайте</a></li>
+			<ul class="breadcrumbs__na">
+				<li class="breadcrumbs__crumb"><a class="breadcrumbs__link breadcrumbs_online-payment" href="index.html">Главная</a></li>
+				<li class="breadcrumbs__crumb"><a class="breadcrumbs__link breadcrumbs_online-payment" href="payment.html">Оплата</a></li>
+				<li class="breadcrumbs__crumb"><a class="breadcrumbs__link current breadcrumbs_online-payment" href="#">Оплата на сайте</a></li>
 			</ul>
 		</nav>
 		<!-- /.breadcrumbs -->
 
+		<main>
+
+			<div class="online-payment">
+
+				<p class="online-payment__introduction">Пожалуйста, введите следующую информацию:</p>
+
+				<form class="online-payment__form payment-form">
+
+					<div class="payment-form__group">
+						<label class="payment-form__label" for="summ">Сумма заказа:</label>
+						<input class="payment-form__input" id="summ" type="text" placeholder="Сумма заказа" required>
+					</div>
+					<div class="payment-form__group">
+						<label class="payment-form__label" for="number">Номер договора:</label>
+						<input class="payment-form__input" id="number" type="text" placeholder="Номер договора" required>
+					</div>
+					
+					<div class="payment-form__group payment-form__group_textarea">
+						<label class="payment-form__label" for="data">Ваши ФИО:</label>
+						<textarea class="payment-form__textarea" id="data" type="text" placeholder="Полные ФИО" required></textarea>
+					</div>
+
+					<div class="payment-form__group">
+						<input type="checkbox" class="payment-form__checkbox" name="policy" id="police" required> <p class="payment-form__check-text">С <a href="policy.html" class="payment-form__policy">политикой конфиденциальности</a> ознакомлен</p>
+					</div>
+					<div class="payment-form__group">
+						<button type="submit" class="payment-form__button button">Перейти к оплате</button>
+					</div>
+						
+				</form>	
+				<!-- /.application__form -->
+
+				<div class="online-payment__cards">
+					<p class="site-payment__text"> К оплате принимаются банковские карты следующих платежных систем:</p>
+					<img class="site-payment__image" src="img/payment/bank-cards.png" alt="bank cards">
+				</div>
+
+				<div class="online-payment__text">
+					<h3 class="online-payment__title">Оплата на сайте</h3>
+					<p class="online-payment__item">Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платёжный шлюз ПАО СБЕРБАНК. Соединение с платёжным шлюзом и передача информации осуществляется в защищённом режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa, MasterCard SecureCode, MIR Accept, J-Secure для проведения платежа также может потребоваться ввод специального пароля.</p>
+					<p class="online-payment__item">Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введённая информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платёжных систем МИР, Visa MasterCard Europe Sprl.</p>
+				</div>
+
+			</div>
+
+		</main>
+
+		<footer class="footer">
+
+			<span class="footer__decor"></span>
+
+			<div class="footer__wrapper">
+
+				<img src="img/footer/decor.png" alt="veyla decor" class="footer__image">
+				
+				<nav class="footer__menu">
+					<a href="index.html" class="footer__list-link">Главная</a>
+					<a href="catalog.html" class="footer__list-link">Каталог</a>
+					<a href="about.html" class="footer__list-link">О нас</a>
+					<a href="delivery.html" class="footer__list-link">Доставка</a>
+					<a href="payment.html" class="footer__list-link">Оплата</a>
+					
+				</nav>
+
+				<nav class="footer__add">
+					<a href="online-payment.html" class="footer__list-link">Оплатить на сайте</a>
+					<a href="policy.html" class="footer__list-link">Политика конфиденциальности</a>
+					<a href="contacts.html" class="footer__list-link">Контакты</a>
+				</nav>
+
+				<div class="footer__contacts footer-contacts">
+
+					<h4 class="footer-contacts__title">Контакты</h4>
+					<span class="footer-contacts__item">Санкт-Петербург, 11-я линия Васильевского острова, 58</span>
+					<span class="footer-contacts__item">тел.: +7 (927) 700-81-45</span>
+					<span class="footer-contacts__item">e-mail: spb.zakaz@veyla-kuhni.ru</span>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+		<div class="popup popup2 popup_payment" id="popup_2">
+			<div class="popup__content">
+				<div class="popup__text popup2__text">
+					<a href="#" class="popup__close close-popup">Х</a>
+					<div class="popup__flex popup-flex">
+						<img src="img/application/popup_img.jpeg" alt="girl" class="popup2__image popup-flex__item">
+						<h3 class="popup__title popup2__title popup-flex__item">Оставьте заявку прямо сейчас!</h3>
+					</div>
+					<form class="popup__form popup-form">
+						<div class="popup-form__group">
+							<input class="popup-form__input" type="text" placeholder="Ваше имя" required>
+							<input class="popup-form__input" type="tel" placeholder="Ваш телефон" required>
+							<button type="submit" class="popup-form__button button">Отправить</button>
+							<button type="button" class="popup-form__button2 button">Создать новую заявку</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		
+		</div>
+
 	</div>
+
+	<script type="text/javascript" src="https://spikmi.com/Widget?Id=6255"></script>
+			<!-- Подключение виджета обратной связи, соцсети -->
+	<script type="text/javascript" src="js/payment/payment.min.js"></script>
 	
 </body>
 </html>
