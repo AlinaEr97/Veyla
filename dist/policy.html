@@ -165,7 +165,6 @@
 	
 					<div class="footer__contacts footer-contacts">
 	
-						<h4 class="footer-contacts__title">Контакты</h4>
 						<span class="footer-contacts__item">Санкт-Петербург, 11-я линия Васильевского острова, 58</span>
 						<span class="footer-contacts__item">тел.: +7 (927) 700-81-45</span>
 						<span class="footer-contacts__item">e-mail: spb.zakaz@veyla-kuhni.ru</span>
@@ -199,8 +198,24 @@
 
 		</div>
 	
-		<script type="text/javascript" src="https://spikmi.com/Widget?Id=6255"></script>
-			<!-- Подключение виджета обратной связи, соцсети -->
+		<!-- GetButton.io widget -->
+		<script type="text/javascript">
+			(function () {
+				var options = {
+					whatsapp: "+7 (927) 700-81-45", // WhatsApp number
+					vkontakte: "veyla-kuhni", // VKontakte page name
+					call_to_action: "Отправьте нам сообщение!", // Call to action
+					button_color: "#FF318E", // Color of button
+					position: "left", // Position may be 'right' or 'left'
+					order: "whatsapp,vkontakte", // Order of buttons
+				};
+				var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+				var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+				s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+				var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+			})();
+		</script>
+		<!-- /GetButton.io widget -->
 		<script type="text/javascript" src="js/payment/payment.min.js"></script>
 
 	</body>

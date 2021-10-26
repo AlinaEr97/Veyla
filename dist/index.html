@@ -1,769 +1,784 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Кухни Veyla</title>
-	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	
-	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/img/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
-	<link rel="manifest" href="/img/favicons/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-
-</head>
-
-<body>
-
-	<div class="wrapper">
-
-		<header class="header">
-
-			<div class="menu">
-
-				<div class="menu__container container">
-
-					<nav class="menu__nav">
-						<a href="index.html" class="menu__link">Главная</a>
-						<a href="catalog.html" class="menu__link">Каталог</a>
-						<a href="about.html" class="menu__link">O нас</a>
-						<a href="delivery.html" class="menu__link">Доставка и сборка</a>
-						<a href="payment.html" class="menu__link">Оплата</a>
-						<a href="contacts.html" class="menu__link">Контакты</a>
-					</nav>
-					<!-- /.menu__nav -->
-
-				</div>
-					<!-- /.menu__container -->
-
-			</div>
-				<!-- /.menu -->
-
-			<div id="header" class="navbar lock-padding">
-
-				<div class="navbar__container">
-
-					<div class="navbar__wrapper">
-						
-						<a href="#menu" class="menu-burger navbar__burger">
-							<span class="menu-burger__line"></span>
-							<span class="menu-burger__line"></span>
-							<span class="menu-burger__line"></span>
-						</a>
-
-						<div class="logo navbar__logo">
-							<strong class="logo__text">Veyla</strong>
-							<div class="logo__description">волшебство на Вашей кухне</div>
-						</div>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Кухни Veyla</title>
+		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 		
-						<div class="navbar__mobile">
-							<a href="tel: +79277008145" class="navbar__phone">+7 927 700-81-45</a>
-							<span class="navbar__working-time">с 9 до 20 без выходных</span>
-						</div>
-		
-						<a href="#application" class="navbar__button button">Рассчитать стоимость</a>
+		<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/img/favicons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+		<link rel="manifest" href="/img/favicons/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+
+			<header class="header">
+
+				<div class="menu">
+
+					<div class="menu__container container">
+
+						<nav class="menu__nav">
+							<a href="index.html" class="menu__link">Главная</a>
+							<a href="catalog.html" class="menu__link">Каталог</a>
+							<a href="about.html" class="menu__link">O нас</a>
+							<a href="delivery.html" class="menu__link">Доставка и сборка</a>
+							<a href="payment.html" class="menu__link">Оплата</a>
+							<a href="contacts.html" class="menu__link">Контакты</a>
+						</nav>
+						<!-- /.menu__nav -->
 
 					</div>
-					<!-- /.navbar__wrapper -->
+						<!-- /.menu__container -->
 
 				</div>
-				<!-- /.navbar__container -->
+					<!-- /.menu -->
 
-			</div>
-			<!-- /.navbar -->
+				<div id="header" class="navbar lock-padding">
 
-			<div class="hero">
-					
-				<div class="hero__wrapper">
+					<div class="navbar__container">
 
-					<div class="hero__offer offer">
-						<h1 class="offer__text">Закажите сейчас <br> и получите замер бесплатно</h1>
-						<a href="#popup_2" class="offer__button popup-link button">Заказать замер</a>
-					</div>
-
-					<div class="hero__bg">
-						<img src="img\hero\hero-bg.jpg" class="hero__image" alt="">
-					</div>
-					
-				</div>
-				<!-- /.hero__wrapper -->
-
-			</div>
-			<!-- /.hero -->
-
-		</header>
-		<!-- /.header -->
-
-
-		<main>
-
-			<section class="application" id="application">
-					
-				<div class="application__wrapper">
-
-					<h2 class="application__title">Оставьте заявку на расчёт</h2>
-					<span class="application__subtitle">и получите скидку до 50% на изготовление <br> кухонного гарнитура</span>
-
-					<form class="form application__form">
-
-						<div class="form__column">
-							<div class="form__group">
-								<label class="form__label">Форма кухни</label>
-								<select class="form__select select-form" size="1">
-									<option class="form__option">Прямая</option>
-									<option class="form__option">Угловая</option>
-									<option class="form__option">П-образная</option>
-								</select>
-							</div>
-							<div class="form__group">
-								<label for="size" class="form__label">Размер кухни, м</label>
-								<input id="size" type="text" class="form__input" required>
-							</div>
-							<div class="form__group">
-								<label class="form__label">Материал</label>
-								<select class="form__select select-material" size="1">
-									<option class="form__option">ДСП</option>
-									<option class="form__option">МДФ</option>
-									<option class="form__option">Массив дерева</option>
-								</select>
-							</div>
-						</div>
-						<div class="form__column">
-							<div class="form__group">
-								<label class="form__label">Покрытие</label>
-								<select class="form__select select-facing" size="1">
-									<option class="form__option">Акриловый пластик</option>
-									<option class="form__option">Меламиновая пленка</option>
-									<option class="form__option">Эмаль</option>
-									<option class="form__option">Полимерная пленка (ПВХ)</option>
-									<option class="form__option">Шпон</option>
-								</select>
-							</div>
-							<div class="form__group">
-								<label class="form__label">Материал столешницы</label>
-								<select class="form__select" size="1">
-									<option class="form__option">Натуральный камень</option>
-									<option class="form__option">Искусственный камень</option>
-									<option class="form__option">Закаленное стекло</option>
-									<option class="form__option">Металлическая поверхность</option>
-								</select>
-							</div>
-							<div class="form__group">
-								<input class="form__input" id="name" type="text" placeholder="Ваше имя" required>
-							</div>
-							<div class="form__group">
-								<input class="form__input" id="phone" type="tel" placeholder="Ваш телефон" required>
-							</div>
-							<div class="form__group">
-								<button type="submit" class="form__button button">Получить скидку!</button>
-							</div>
-						</div>
+						<div class="navbar__wrapper">
 							
-					</form>	
-					<!-- /.application__form -->
+							<a href="#menu" class="menu-burger navbar__burger">
+								<span class="menu-burger__line"></span>
+								<span class="menu-burger__line"></span>
+								<span class="menu-burger__line"></span>
+							</a>
+
+							<div class="logo navbar__logo">
+								<strong class="logo__text">Veyla</strong>
+								<div class="logo__description">волшебство на Вашей кухне</div>
+							</div>
+			
+							<div class="navbar__mobile">
+								<a href="tel: +79277008145" class="navbar__phone">+7 927 700-81-45</a>
+								<span class="navbar__working-time">с 9 до 20 без выходных</span>
+							</div>
+			
+							<a href="#application" class="navbar__button button">Рассчитать стоимость</a>
+
+						</div>
+						<!-- /.navbar__wrapper -->
+
+					</div>
+					<!-- /.navbar__container -->
 
 				</div>
-				<!-- /.application__wrapper -->
+				<!-- /.navbar -->
 
-			</section>
-			<!-- /.application -->
+				<div class="hero">
+						
+					<div class="hero__wrapper">
 
-			<section class="slider">
-
-				<div class="slider__wrapper">
-
-					<div class="slider__text">
-						<p class="slider__title">Наши кухни</p>
-						<a class="slider__link" href="catalog.html">Перейти в каталог</a>
-					</div>
-
-					<div class="kitchen-slider swiper-container">
-		
-						<div class="kitchen-slider__wrapper swiper-wrapper">
-			
-							<div class="kitchen-slider__slide swiper-slide kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#neon">
-									<img class="kitchen-slider__image" src="img/catalog/c1.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Неон</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">Старая цена: <span class="kitchen-offer__false-number_neon">&nbsp;120500</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;55490</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
-							<div class="kitchen-slider__slide swiper-slide kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#standart">
-									<img class="kitchen-slider__image" src="img/catalog/c2.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Штандарт</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">
-												Старая цена: <span class="kitchen-offer__false-number_standart">112500</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
-							<div class="kitchen-slider__slide swiper-slide kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#dorry">
-									<img class="kitchen-slider__image" src="img/catalog/c3.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Дорри</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">
-												Старая цена: <span class="kitchen-offer__false-number">84500</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;33690</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
-							<div class="kitchen-slider__slide swiper-slide kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#savanna">
-									<img class="kitchen-slider__image" src="img/catalog/c4.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Саванна</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">
-												Старая цена: <span class="kitchen-offer__false-number">80200</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;31890</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
-							<div class="kitchen-slider__slide swiper-slide kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#scarlett">
-									<img class="kitchen-slider__image" src="img/catalog/c5.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Скарлетт</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">
-												Старая цена: <span class="kitchen-offer__false-number">89400</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;42600</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
-							<div class="kitchen-slider__slide swiper-slide  kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#shale">
-									<img class="kitchen-slider__image" src="img/catalog/c6.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Шале</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">
-												Старая цена: <span class="kitchen-offer__false-number">83500</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;40200</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
-							<div class="kitchen-slider__slide swiper-slide kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#victoria">
-									<img class="kitchen-slider__image" src="img/catalog/c7.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Виктория</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">
-												Старая цена: <span class="kitchen-offer__false-number">94800</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;57790</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
-							<div class="kitchen-slider__slide swiper-slide kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#melange">
-									<img class="kitchen-slider__image" src="img/catalog/c8.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Меланж</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">
-												Старая цена: <span class="kitchen-offer__false-number">88300</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;42600</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
-							<div class="kitchen-slider__slide swiper-slide kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#rosinka">
-									<img class="kitchen-slider__image" src="img/catalog/c9.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Росинка</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">
-												Старая цена: <span class="kitchen-offer__false-number">94200</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;50690</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
-							<div class="kitchen-slider__slide swiper-slide kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#vector">
-									<img class="kitchen-slider__image" src="img/catalog/c10.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Вектор</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">
-												Старая цена: <span class="kitchen-offer__false-number">97390</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;54600</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
-							<div class="kitchen-slider__slide swiper-slide kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#classic">
-									<img class="kitchen-slider__image" src="img/catalog/c11.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Классик</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">
-												Старая цена: <span class="kitchen-offer__false-number_classic">103500</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;62090</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
-							<div class="kitchen-slider__slide swiper-slide kitchen-offer">
-								<a class="kitchen-offer__block popup-link" href="#lira">
-									<img class="kitchen-slider__image" src="img/catalog/c12.jpg" alt="">
-									<div class="kitchen-offer__container">
-										<div class="kitchen-offer__text">
-											<span class="kitchen-offer__kitchen">Кухня</span>
-											<span class="kitchen-offer__name">Лира</span>
-										</div>
-										<div class="kitchen-offer__price">
-											<span class="kitchen-offer__old-price">
-												Старая цена: <span class="kitchen-offer__false-number">99390</span></span>
-											<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;55900</span></span>
-										</div>
-									</div>
-								</a>
-							</div>
-			
+						<div class="hero__offer offer">
+							<h1 class="offer__text">Закажите сейчас <br> и получите замер бесплатно</h1>
+							<a href="#popup_2" class="offer__button popup-link button">Заказать замер</a>
 						</div>
-						<!-- /.kitchen-slider__wrapper -->
 
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
+						<div class="hero__bg">
+							<img src="img\hero\hero-bg.jpg" class="hero__image" alt="">
+						</div>
 						
 					</div>
-					<!-- /.kitchen-slider -->
-					
-					<div class="swiper-pagination"></div>
+					<!-- /.hero__wrapper -->
 
 				</div>
-				<!-- /.slider__wrapper-->
-		
-			</section>
-			<!-- /.slider -->
+				<!-- /.hero -->
 
-			<section class="features">
+			</header>
+			<!-- /.header -->
 
-				<h3 class="features__title">Почему выбирают нас?</h3>
-				
-				<div class="features__box about-features">
-					<div class="about-features__block">
-						<img class="about-features__image" src="img/icons/finance.png">
-						<div class="about-features__text">Экономия семейного бюджета</div>
-					</div>
 
-					<div class="about-features__block">
-						<img class="about-features__image" src="img/icons/calender.png">
-						<div class="about-features__text">Точное соблюдение сроков</div>
-					</div>
+			<main>
 
-					<div class="about-features__block">
-						<img class="about-features__image" src="img/icons/personal.png">
-						<div class="about-features__text">Индивидальный подход к клиентам</div>
-					</div>
+				<section class="application" id="application">
+						
+					<div class="application__wrapper">
 
-					<div class="about-features__block">
-						<img class="about-features__image" src="img/icons/factory.png">
-						<div class="about-features__text">Собственное производство</div>
-					</div>
+						<h2 class="application__title">Оставьте заявку на расчёт</h2>
+						<span class="application__subtitle">и получите скидку до 50% на изготовление <br> кухонного гарнитура</span>
 
-					<div class="about-features__block">
-						<img class="about-features__image" src="img/icons/quality.png">
-						<div class="about-features__text">Гарантия качества</div>
-					</div>
+						<form class="form application__form">
 
-					<div class="about-features__block">
-						<img class="about-features__image" src="img/icons/assorty.png">
-						<div class="about-features__text">Разнообразие моделей и цветов</div>
-					</div>
-				</div>
-
-			</section>
-
-			<!-- /.features -->
-					
-		</main>
-
-		<footer class="footer">
-
-			<span class="footer__decor"></span>
-
-			<div class="footer__wrapper">
-
-				<img src="img/footer/decor.png" alt="veyla decor" class="footer__image">
-				
-				<nav class="footer__menu">
-					<a href="index.html" class="footer__list-link">Главная</a>
-					<a href="catalog.html" class="footer__list-link">Каталог</a>
-					<a href="about.html" class="footer__list-link">О нас</a>
-					<a href="delivery.html" class="footer__list-link">Доставка</a>
-					<a href="payment.html" class="footer__list-link">Оплата</a>
-					
-				</nav>
-
-				<nav class="footer__add">
-					<a href="online-payment.html" class="footer__list-link">Оплатить на сайте</a>
-					<a href="policy.html" class="footer__list-link">Политика конфиденциальности</a>
-					<a href="contacts.html" class="footer__list-link">Контакты</a>
-				</nav>
-
-				<div class="footer__contacts footer-contacts">
-
-					<h4 class="footer-contacts__title">Контакты</h4>
-					<span class="footer-contacts__item">Санкт-Петербург, 11-я линия Васильевского острова, 58</span>
-					<span class="footer-contacts__item">тел.: +7 (927) 700-81-45</span>
-					<span class="footer-contacts__item">e-mail: spb.zakaz@veyla-kuhni.ru</span>
-
-				</div>
-
-			</div>
-
-		</footer>
-
-		<div class="popup" id="neon">
-			<div class="popup__wrapper"> 
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c1.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Неон</h3>
-						<p class="popup__old-price popup__features">Старая цена: 120500 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">55490 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup" id="standart">
-			<div class="popup__wrapper"> 
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c2.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Штандарт</h3>
-						<p class="popup__old-price popup__features">Старая цена: 112500 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">56690 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup" id="dorry">
-			<div class="popup__wrapper">
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c3.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Дорри</h3>
-						<p class="popup__old-price popup__features">Старая цена: 84500 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">33690 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup" id="savanna">
-			<div class="popup__wrapper">
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c4.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Саванна</h3>
-						<p class="popup__old-price popup__features">Старая цена: 80200 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">31890 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup" id="scarlett">
-			<div class="popup__wrapper">
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c5.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Скарлетт</h3>
-						<p class="popup__old-price popup__features">Старая цена: 89400 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">42600 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup" id="shale">
-			<div class="popup__wrapper">
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c6.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Шале</h3>
-						<p class="popup__old-price popup__features">Старая цена: 83500 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">40200 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup" id="victoria">
-			<div class="popup__wrapper">
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c7.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Виктория</h3>
-						<p class="popup__old-price popup__features">Старая цена: 94800 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">57790 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup" id="melange">
-			<div class="popup__wrapper">
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c8.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Меланж</h3>
-						<p class="popup__old-price popup__features">Старая цена: 88300 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">42600 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup" id="rosinka">
-			<div class="popup__wrapper">
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c9.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Росинка</h3>
-						<p class="popup__old-price popup__features">Старая цена: 94200 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">50690 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup" id="vector">
-			<div class="popup__wrapper">
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c10.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Вектор</h3>
-						<p class="popup__old-price popup__features">Старая цена: 97390 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">54600 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup" id="classic">
-			<div class="popup__wrapper">
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c11.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Классик</h3>
-						<p class="popup__old-price popup__features">Старая цена: 103500 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">62090 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup" id="lira">
-			<div class="popup__wrapper">
-				<div class="popup__content">
-					<img class="popup__image" src="img/catalog/c12.jpg" alt="#">
-					<div class="popup__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<h3 class="popup__title popup__features">Кухня Лира</h3>
-						<p class="popup__old-price popup__features">Старая цена: 99390 руб.</p>
-						<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">55900 руб.</span></p>
-						<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
-						<div class="popup__advantages-box">
-							<p class="popup__advantages popup__features">Доставка</p>
-							<p class="popup__advantages popup__features">Сборка</p>
-							<p class="popup__advantages popup__features">Самовывоз</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup popup2" id="popup_2">
-			<div class="popup__wrapper"> 
-				<div class="popup__content">
-					<div class="popup__text popup2__text">
-						<a href="#" class="popup__close close-popup">Х</a>
-						<div class="popup__flex popup-flex">
-							<img src="img/application/popup_img.jpeg" alt="girl" class="popup2__image popup-flex__item">
-							<h3 class="popup__title popup2__title popup-flex__item">Оставьте заявку прямо сейчас!</h3>
-						</div>
-						<form class="popup__form popup-form">
-							<div class="popup-form__group">
-								<input class="popup-form__input" type="text" placeholder="Ваше имя" required>
-								<input class="popup-form__input" type="tel" placeholder="Ваш телефон" required>
-								<button type="submit" class="popup-form__button button">Отправить</button>
-								<button type="button" class="popup-form__button2 button">Создать новую заявку</button>
+							<div class="form__column">
+								<div class="form__group">
+									<label class="form__label">Форма кухни</label>
+									<select class="form__select select-form" size="1">
+										<option class="form__option">Прямая</option>
+										<option class="form__option">Угловая</option>
+										<option class="form__option">П-образная</option>
+									</select>
+								</div>
+								<div class="form__group">
+									<label for="size" class="form__label">Размер кухни, м</label>
+									<input id="size" type="text" class="form__input" required>
+								</div>
+								<div class="form__group">
+									<label class="form__label">Материал</label>
+									<select class="form__select select-material" size="1">
+										<option class="form__option">ДСП</option>
+										<option class="form__option">МДФ</option>
+										<option class="form__option">Массив дерева</option>
+									</select>
+								</div>
 							</div>
-						</form>
+							<div class="form__column">
+								<div class="form__group">
+									<label class="form__label">Покрытие</label>
+									<select class="form__select select-facing" size="1">
+										<option class="form__option">Акриловый пластик</option>
+										<option class="form__option">Меламиновая пленка</option>
+										<option class="form__option">Эмаль</option>
+										<option class="form__option">Полимерная пленка (ПВХ)</option>
+										<option class="form__option">Шпон</option>
+									</select>
+								</div>
+								<div class="form__group">
+									<label class="form__label">Материал столешницы</label>
+									<select class="form__select" size="1">
+										<option class="form__option">Натуральный камень</option>
+										<option class="form__option">Искусственный камень</option>
+										<option class="form__option">Закаленное стекло</option>
+										<option class="form__option">Металлическая поверхность</option>
+									</select>
+								</div>
+								<div class="form__group">
+									<input class="form__input" id="name" type="text" placeholder="Ваше имя" required>
+								</div>
+								<div class="form__group">
+									<input class="form__input" id="phone" type="tel" placeholder="Ваш телефон" required>
+								</div>
+								<div class="form__group">
+									<button type="submit" class="form__button button">Получить скидку!</button>
+								</div>
+							</div>
+								
+						</form>	
+						<!-- /.application__form -->
+
+					</div>
+					<!-- /.application__wrapper -->
+
+				</section>
+				<!-- /.application -->
+
+				<section class="slider">
+
+					<div class="slider__wrapper">
+
+						<div class="slider__text">
+							<p class="slider__title">Наши кухни</p>
+							<a class="slider__link" href="catalog.html">Перейти в каталог</a>
+						</div>
+
+						<div class="kitchen-slider swiper-container">
+			
+							<div class="kitchen-slider__wrapper swiper-wrapper">
+				
+								<div class="kitchen-slider__slide swiper-slide kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#neon">
+										<img class="kitchen-slider__image" src="img/catalog/c1.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Неон</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">Старая цена: <span class="kitchen-offer__false-number_neon">&nbsp;120500</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;55490</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+								<div class="kitchen-slider__slide swiper-slide kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#standart">
+										<img class="kitchen-slider__image" src="img/catalog/c2.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Штандарт</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">
+													Старая цена: <span class="kitchen-offer__false-number_standart">112500</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;56690</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+								<div class="kitchen-slider__slide swiper-slide kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#dorry">
+										<img class="kitchen-slider__image" src="img/catalog/c3.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Дорри</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">
+													Старая цена: <span class="kitchen-offer__false-number">84500</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;33690</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+								<div class="kitchen-slider__slide swiper-slide kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#savanna">
+										<img class="kitchen-slider__image" src="img/catalog/c4.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Саванна</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">
+													Старая цена: <span class="kitchen-offer__false-number">80200</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;31890</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+								<div class="kitchen-slider__slide swiper-slide kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#scarlett">
+										<img class="kitchen-slider__image" src="img/catalog/c5.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Скарлетт</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">
+													Старая цена: <span class="kitchen-offer__false-number">89400</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;42600</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+								<div class="kitchen-slider__slide swiper-slide  kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#shale">
+										<img class="kitchen-slider__image" src="img/catalog/c6.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Шале</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">
+													Старая цена: <span class="kitchen-offer__false-number">83500</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;40200</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+								<div class="kitchen-slider__slide swiper-slide kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#victoria">
+										<img class="kitchen-slider__image" src="img/catalog/c7.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Виктория</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">
+													Старая цена: <span class="kitchen-offer__false-number">94800</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;57790</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+								<div class="kitchen-slider__slide swiper-slide kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#melange">
+										<img class="kitchen-slider__image" src="img/catalog/c8.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Меланж</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">
+													Старая цена: <span class="kitchen-offer__false-number">88300</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;42600</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+								<div class="kitchen-slider__slide swiper-slide kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#rosinka">
+										<img class="kitchen-slider__image" src="img/catalog/c9.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Росинка</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">
+													Старая цена: <span class="kitchen-offer__false-number">94200</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;50690</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+								<div class="kitchen-slider__slide swiper-slide kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#vector">
+										<img class="kitchen-slider__image" src="img/catalog/c10.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Вектор</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">
+													Старая цена: <span class="kitchen-offer__false-number">97390</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;54600</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+								<div class="kitchen-slider__slide swiper-slide kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#classic">
+										<img class="kitchen-slider__image" src="img/catalog/c11.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Классик</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">
+													Старая цена: <span class="kitchen-offer__false-number_classic">103500</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;62090</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+								<div class="kitchen-slider__slide swiper-slide kitchen-offer">
+									<a class="kitchen-offer__block popup-link" href="#lira">
+										<img class="kitchen-slider__image" src="img/catalog/c12.jpg" alt="">
+										<div class="kitchen-offer__container">
+											<div class="kitchen-offer__text">
+												<span class="kitchen-offer__kitchen">Кухня</span>
+												<span class="kitchen-offer__name">Лира</span>
+											</div>
+											<div class="kitchen-offer__price">
+												<span class="kitchen-offer__old-price">
+													Старая цена: <span class="kitchen-offer__false-number">99390</span></span>
+												<span class="kitchen-offer__new-price">Новая цена: <span class="kitchen-offer__true-number">&nbsp;55900</span></span>
+											</div>
+										</div>
+									</a>
+								</div>
+				
+							</div>
+							<!-- /.kitchen-slider__wrapper -->
+
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							
+						</div>
+						<!-- /.kitchen-slider -->
+						
+						<div class="swiper-pagination"></div>
+
+					</div>
+					<!-- /.slider__wrapper-->
+			
+				</section>
+				<!-- /.slider -->
+
+				<section class="features">
+
+					<h3 class="features__title">Почему выбирают нас?</h3>
+					
+					<div class="features__box about-features">
+						<div class="about-features__block">
+							<img class="about-features__image" src="img/icons/finance.png">
+							<div class="about-features__text">Экономия семейного бюджета</div>
+						</div>
+
+						<div class="about-features__block">
+							<img class="about-features__image" src="img/icons/calender.png">
+							<div class="about-features__text">Точное соблюдение сроков</div>
+						</div>
+
+						<div class="about-features__block">
+							<img class="about-features__image" src="img/icons/personal.png">
+							<div class="about-features__text">Индивидальный подход к клиентам</div>
+						</div>
+
+						<div class="about-features__block">
+							<img class="about-features__image" src="img/icons/factory.png">
+							<div class="about-features__text">Собственное производство</div>
+						</div>
+
+						<div class="about-features__block">
+							<img class="about-features__image" src="img/icons/quality.png">
+							<div class="about-features__text">Гарантия качества</div>
+						</div>
+
+						<div class="about-features__block">
+							<img class="about-features__image" src="img/icons/assorty.png">
+							<div class="about-features__text">Разнообразие моделей и цветов</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- /.features -->
+						
+			</main>
+
+			<footer class="footer">
+
+				<span class="footer__decor"></span>
+
+				<div class="footer__wrapper">
+
+					<img src="img/footer/decor.png" alt="veyla decor" class="footer__image">
+					
+					<nav class="footer__menu">
+						<a href="index.html" class="footer__list-link">Главная</a>
+						<a href="catalog.html" class="footer__list-link">Каталог</a>
+						<a href="about.html" class="footer__list-link">О нас</a>
+						<a href="delivery.html" class="footer__list-link">Доставка</a>
+						<a href="payment.html" class="footer__list-link">Оплата</a>
+						
+					</nav>
+
+					<nav class="footer__add">
+						<a href="online-payment.html" class="footer__list-link">Оплатить на сайте</a>
+						<a href="policy.html" class="footer__list-link">Политика конфиденциальности</a>
+						<a href="contacts.html" class="footer__list-link">Контакты</a>
+					</nav>
+
+					<div class="footer__contacts footer-contacts">
+
+						<span class="footer-contacts__item">Санкт-Петербург, 11-я линия Васильевского острова, 58</span>
+						<span class="footer-contacts__item">тел.: +7 (927) 700-81-45</span>
+						<span class="footer-contacts__item">e-mail: spb.zakaz@veyla-kuhni.ru</span>
+
+					</div>
+
+				</div>
+
+			</footer>
+
+			<div class="popup" id="neon">
+				<div class="popup__wrapper"> 
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c1.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Неон</h3>
+							<p class="popup__old-price popup__features">Старая цена: 120500 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">55490 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="popup" id="standart">
+				<div class="popup__wrapper"> 
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c2.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Штандарт</h3>
+							<p class="popup__old-price popup__features">Старая цена: 112500 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">56690 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="dorry">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c3.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Дорри</h3>
+							<p class="popup__old-price popup__features">Старая цена: 84500 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">33690 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="savanna">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c4.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Саванна</h3>
+							<p class="popup__old-price popup__features">Старая цена: 80200 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">31890 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="scarlett">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c5.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Скарлетт</h3>
+							<p class="popup__old-price popup__features">Старая цена: 89400 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">42600 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="shale">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c6.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Шале</h3>
+							<p class="popup__old-price popup__features">Старая цена: 83500 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">40200 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="victoria">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c7.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Виктория</h3>
+							<p class="popup__old-price popup__features">Старая цена: 94800 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">57790 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="melange">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c8.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Меланж</h3>
+							<p class="popup__old-price popup__features">Старая цена: 88300 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">42600 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="rosinka">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c9.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Росинка</h3>
+							<p class="popup__old-price popup__features">Старая цена: 94200 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">50690 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="vector">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c10.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Вектор</h3>
+							<p class="popup__old-price popup__features">Старая цена: 97390 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">54600 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="classic">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c11.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Классик</h3>
+							<p class="popup__old-price popup__features">Старая цена: 103500 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">62090 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup" id="lira">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<img class="popup__image" src="img/catalog/c12.jpg" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня Лира</h3>
+							<p class="popup__old-price popup__features">Старая цена: 99390 руб.</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">55900 руб.</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features button">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="popup popup2" id="popup_2">
+				<div class="popup__wrapper"> 
+					<div class="popup__content">
+						<div class="popup__text popup2__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<div class="popup__flex popup-flex">
+								<img src="img/application/popup_img.jpeg" alt="girl" class="popup2__image popup-flex__item">
+								<h3 class="popup__title popup2__title popup-flex__item">Оставьте заявку прямо сейчас!</h3>
+							</div>
+							<form class="popup__form popup-form">
+								<div class="popup-form__group">
+									<input class="popup-form__input" type="text" placeholder="Ваше имя" required>
+									<input class="popup-form__input" type="tel" placeholder="Ваш телефон" required>
+									<button type="submit" class="popup-form__button button">Отправить</button>
+									<button type="button" class="popup-form__button2 button">Создать новую заявку</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
-		
-	</div>
 
-	<script type="text/javascript" src="https://spikmi.com/Widget?Id=6255"></script>
-	<!-- Подключение виджета обратной связи, соцсети -->
-	<script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<!-- Подключение слайдера Swiper -->
-	<script type="text/javascript" src="js/main.min.js"></script>
+		<!-- GetButton.io widget -->
+		<script type="text/javascript">
+			(function () {
+				var options = {
+					whatsapp: "+7 (927) 700-81-45", // WhatsApp number
+					vkontakte: "veyla-kuhni", // VKontakte page name
+					call_to_action: "Отправьте нам сообщение!", // Call to action
+					button_color: "#FF318E", // Color of button
+					position: "left", // Position may be 'right' or 'left'
+					order: "whatsapp,vkontakte", // Order of buttons
+				};
+				var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+				var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+				s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+				var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+			})();
+		</script>
+		<!-- /GetButton.io widget -->
+		<script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<!-- Подключение слайдера Swiper -->
+		<script type="text/javascript" src="js/main.min.js"></script>
 
-</body>
+	</body>
 
 </html>
