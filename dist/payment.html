@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
+	
 	<head>
+
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Оплата</title>
@@ -61,11 +63,13 @@
 							<span class="menu-burger__line"></span>
 							<span class="menu-burger__line"></span>
 						</a>
+						<!-- /.menu-burger -->
 
 						<div class="header-catalog__logo logo">
-							<a href="index.html"><strong class="logo__text logo__text_catalog">Veyla</strong></a>
-							<div class="logo__description logo__description_catalog">волшебство на Вашей кухне</div>
+							<a href="index.html"><strong class="logo__text logo__text_about">Veyla</strong></a>
+							<div class="logo__description logo__description_about">волшебство на Вашей кухне</div>
 						</div>
+						<!-- /.logo -->
 
 						<h2 class="logo__title logo__title_about">Оплата</h2>
 						
@@ -73,9 +77,12 @@
 							<a href="tel: +79277008145" class="catalog-mobile__phone">+7 927 700-81-45</a>
 							<span class="catalog-mobile__working-time">с 9 до 20 без выходных</span>
 						</div>
-						<a href="#popup_2" class="catalog-mobile__button about-mobile__button button popup-link">Заказать обратный звонок</a>
+						<!-- /.header-catalog__mobile -->
+
+						<a href="#popup_2" class="about-mobile__button popup-link">Заказать обратный звонок</a>
 							
 					</div>
+					<!-- /.header-catalog__wrapper -->
 					
 				</div>
 				<!-- /.header-catalog__container -->
@@ -99,7 +106,7 @@
 	
 						<p class="payment__introduction">Чтобы Вам было максимально удобно и просто оплатить свои заказы, мы предлагаем различные виды оплаты. Всего лишь выберите способ подходящий именно Вам!</p>
 	
-						<div class="payment__variants payment-variants">
+						<section class="payment__variants payment-variants">
 	
 							<div class="payment-variants__block">
 								<h4 class="payment-variants__title">В нашем офисе</h4>
@@ -125,31 +132,35 @@
 								<p class="payment-variants__text">Привыкли оплачивать свои покупки банковским переводом? Не вопрос! Вы можете запросить у нас счет на оплату с указанием наших реквизитов и оплатить его в любом удобном для Вас банке.</p>
 							</div>
 	
-						</div>
+						</section>
+						<!-- /.payment-variants -->
 							
-						<div class="payment__site-payment site-payment">
+						<section class="payment__site-payment site-payment">
 	
 							<h4 class="site-payment__title">Оплатить на сайте</h4>
 							<p class="site-payment__text">Мы ценим Ваше время и где бы Вы не находились, на работе в офисе, дома или в кафе &mdash; Вы всегда сможете оплатить онлайн свой заказ на нашем сайте. Безопасность обработки Интернет-платежей гарантирует ПАО СБЕРБАНК несомненно, говорит о высокой надежности и безопасности оплаты. При передаче информации используется спец технологии безопасности карточных онлайн-платежей, обработка данных ведется на безопасном высокотехнол сервере процессинга ПАО СБЕРБАНК.</p>
 							<br>
 							<p class="site-payment__text"> К оплате принимаются банковские карты следующих платежных систем:</p>
 							<img class="site-payment__image" src="img/payment/bank-cards.png" alt="bank cards">
-							<a href="online-payment.html" class="site-payment__link button">Оплатить</a>
+							<a href="online-payment.html" class="site-payment__link">Оплатить</a>
 							
-						</div>
+						</section>
+						<!-- /.site-payment -->
 						
 					</div>
+					<!-- /.payment__text -->
 	
 				</div>
+				<!-- /.payment -->
 	
 			</main>
 
 			<footer class="footer">
 
 				<span class="footer__decor"></span>
-	
+
 				<div class="footer__wrapper">
-	
+
 					<img src="img/footer/decor.png" alt="veyla decor" class="footer__image">
 					
 					<nav class="footer__menu">
@@ -158,28 +169,30 @@
 						<a href="about.html" class="footer__list-link">О нас</a>
 						<a href="delivery.html" class="footer__list-link">Доставка</a>
 						<a href="payment.html" class="footer__list-link">Оплата</a>
-						
 					</nav>
-	
+					<!-- /.footer__menu -->
+
 					<nav class="footer__add">
 						<a href="online-payment.html" class="footer__list-link">Оплатить на сайте</a>
 						<a href="policy.html" class="footer__list-link">Политика конфиденциальности</a>
 						<a href="contacts.html" class="footer__list-link">Контакты</a>
 					</nav>
-	
+					<!-- /.footer__add -->
+
 					<div class="footer__contacts footer-contacts">
-	
 						<span class="footer-contacts__item">Санкт-Петербург, 11-я линия Васильевского острова, 58</span>
 						<span class="footer-contacts__item">тел.: +7 (927) 700-81-45</span>
 						<span class="footer-contacts__item">e-mail: spb.zakaz@veyla-kuhni.ru</span>
-	
 					</div>
-	
-				</div>
-	
-			</footer>
+					<!-- /.footer-contacts -->
 
-			<div class="popup popup2 popup_payment" id="popup_2">
+				</div>
+				<!-- /.footer__wrapper -->
+
+			</footer>
+			<!-- /.footer -->
+
+			<div class="popup popup2 popup_about" id="popup_2">
 				<div class="popup__content">
 					<div class="popup__text popup2__text">
 						<a href="#" class="popup__close close-popup">Х</a>
@@ -191,18 +204,19 @@
 							<div class="popup-form__group">
 								<input class="popup-form__input" type="text" placeholder="Ваше имя" required>
 								<input class="popup-form__input" type="tel" placeholder="Ваш телефон" required>
-								<button type="submit" class="popup-form__button button">Отправить</button>
-								<button type="button" class="popup-form__button2 button">Создать новую заявку</button>
+								<button type="submit" class="popup-form__button">Отправить</button>
+								<button type="button" class="popup-form__button2">Создать новую заявку</button>
 							</div>
 						</form>
 					</div>
 				</div>
 			
 			</div>
+			<!-- /.popup2 -->
 
 		</div>
+		<!-- /.wrapper -->
 
-		<!-- GetButton.io widget -->
 		<script type="text/javascript">
 			(function () {
 				var options = {
