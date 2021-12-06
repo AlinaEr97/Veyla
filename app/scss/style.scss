@@ -1,0 +1,54 @@
+//Обнуление
+@import "general/null";
+
+//Миксины и переменные
+@import "general/mixin";
+
+//Шапка
+@import "sections/navbar";
+
+//Шрифты
+@import "general/fonts";
+
+//Общие натройки контента
+@import "general/body";
+
+//Главный блок
+@import "sections/hero";
+
+//Блок с формой 
+@import "sections/application";
+
+//Страница каталога
+@import "pages/catalog";
+
+//Слайдер
+@import "sections/slider";
+
+//Преимущества
+@import "sections/features";
+
+//Подвал
+@import "sections/footer";
+
+//Попапы
+@import "sections/popup";
+
+//Страница о нас
+@import "pages/about";
+
+//Страница о доставке и сборке
+@import "pages/delivery";
+
+//Страница об оплате
+@import "pages/payment";
+
+//Страница об оплате на сайте
+@import "pages/online-payment";
+
+//Страница о политике конфиденциальности
+@import "pages/policy";
+
+//Страница о контактах
+@import "pages/contacts";
+

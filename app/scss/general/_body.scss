@@ -1,0 +1,28 @@
+body {
+	width: 100%;
+	font-family: 'Open Sans Regular', sans-serif;
+	font-weight: 400;
+	background-color: #E1E5F0;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	width: 100vw;
+	min-width: 300px;
+	overflow: hidden;
+}
+
+header {
+	max-width: 100vw;
+	min-width: 300px;
+}
+
+main {
+	max-width: 100vw;
+	min-width: 300px;
+}
+
+footer {
+	max-width: 100vw;
+	min-width: 300px;
+}
