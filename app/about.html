@@ -6,7 +6,10 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>О нас</title>
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="prefetch" href="fonts/EagleLake-Regular.woff" as="font" crossorigin>
+		<link rel="prefetch" href="fonts/OpenSans-Regular.woff" as="font" crossorigin>
+		<link rel="prefetch" href="fonts/RussoOne-Regular.woff" as="font" crossorigin>
+		<link rel="stylesheet" href="css/style.css">
 
 		<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
@@ -64,7 +67,7 @@
 						<h2 class="logo__title logo__title_about">О нас</h2>
 						
 						<div class="header-catalog__mobile catalog-mobile about-mobile">
-							<a href="tel: +79277008145" class="catalog-mobile__phone">+7 927 700-81-45</a>
+							<span class="catalog-mobile__phone">+7 927 700-81-45</span>
 							<span class="catalog-mobile__working-time">с 9 до 20 без выходных</span>
 						</div>
 						<!-- /.about-mobile -->
@@ -114,32 +117,32 @@
 					<section class="about-us__features about-features">
 
 						<div class="about-features__block">
-							<img class="about-features__image" src="img/icons/finance.png">
+							<img class="about-features__image" alt="Экономия" src="img/icons/finance.png">
 							<div class="about-features__text">Экономия семейного бюджета</div>
 						</div>
 
 						<div class="about-features__block">
-							<img class="about-features__image" src="img/icons/calender.png">
+							<img class="about-features__image" alt="Соблюдение сроков" src="img/icons/calender.png">
 							<div class="about-features__text">Точное соблюдение сроков</div>
 						</div>
 
 						<div class="about-features__block">
-							<img class="about-features__image" src="img/icons/personal.png">
+							<img class="about-features__image" alt="Клиентоориентированность" src="img/icons/personal.png">
 							<div class="about-features__text">Индивидальный подход к клиентам</div>
 						</div>
 
 						<div class="about-features__block">
-							<img class="about-features__image" src="img/icons/factory.png">
+							<img class="about-features__image" alt="Собственное производство" src="img/icons/factory.png">
 							<div class="about-features__text">Собственное производство</div>
 						</div>
 
 						<div class="about-features__block">
-							<img class="about-features__image" src="img/icons/quality.png">
+							<img class="about-features__image" alt="Качество" src="img/icons/quality.png">
 							<div class="about-features__text">Гарантия качества</div>
 						</div>
 
 						<div class="about-features__block">
-							<img class="about-features__image" src="img/icons/assorty.png">
+							<img class="about-features__image" alt="Под любой интерьер" src="img/icons/assorty.png">
 							<div class="about-features__text">Разнообразие моделей и цветов</div>
 						</div>
 
@@ -213,12 +216,13 @@
 		</div>
 		<!-- /.wrapper -->
 
-		<script type="text/javascript">
+		<!-- /GetButton.io widget -->
+		<script>
 			(function () {
 				var options = {
 					whatsapp: "+7 (927) 700-81-45", // WhatsApp number
 					vkontakte: "veyla-kuhni", // VKontakte page name
-					call_to_action: "Отправьте нам сообщение!", // Call to action
+					call_to_action: "", // Call to action
 					button_color: "#FF318E", // Color of button
 					position: "left", // Position may be 'right' or 'left'
 					order: "whatsapp,vkontakte", // Order of buttons
@@ -230,7 +234,7 @@
 			})();
 		</script>
 		<!-- /GetButton.io widget -->
-		<script type="text/javascript" src="js/about/about.min.js"></script>
+		<script src="js/about/about.js"></script>
 		
 	</body>
 
