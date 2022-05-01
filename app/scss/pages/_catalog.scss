@@ -1,21 +1,24 @@
-.menu_active-catalog {
-	transform: translateY(100%);
-	opacity: 1;
+.menu {
 
-	@media (max-width: 1000px) {
-		transform: translateY(32%);
-	}
-	@media (max-width: 720px) {
-		transform: translateY(10%);
-	}
-	@media (max-width: 545px) {
-		transform: translateY(5%);
-	}
-	@media (max-width: 440px) {
-		transform: translateY(2%);
-	}
-	@media (max-width: 400px) {
-		transform: translateY(0%);
+	&_active-catalog {
+		transform: translateY(100%);
+		opacity: 1;
+	
+		@media (max-width: 1000px) {
+			transform: translateY(32%);
+		}
+		@media (max-width: 720px) {
+			transform: translateY(10%);
+		}
+		@media (max-width: 545px) {
+			transform: translateY(5%);
+		}
+		@media (max-width: 440px) {
+			transform: translateY(2%);
+		}
+		@media (max-width: 400px) {
+			transform: translateY(0%);
+		}
 	}
 }
 
@@ -419,7 +422,7 @@
 
 .catalog {
 	
-	&__wrapper {
+	&__store {
 		margin: auto;
 		padding: 30px 80px;
 		width: 90%;

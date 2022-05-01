@@ -91,11 +91,14 @@
 }
 
 .delivery {
-	margin-bottom: 50px;
-	padding-top: 50px;
 
-	@media (max-width: 1000px) {
-		padding-top: 25px;	
+	&__wrapper {
+		margin-bottom: 50px;
+		padding-top: 50px;
+
+		@media (max-width: 1000px) {
+			padding-top: 25px;	
+		}
 	}
 }
 
@@ -248,9 +251,9 @@
 			min-width: 400px;
 		}
 		@media (max-width: 750px) {
+			margin: auto;
 			min-width: 0;
 			width: 90%;
-			margin: auto;
 		}
 		@media (max-width: 500px) {
 			max-height: 350px;
