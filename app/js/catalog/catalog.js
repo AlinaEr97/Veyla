@@ -10880,6 +10880,129 @@ if ( typeof noGlobal === "undefined" ) {
 return jQuery;
 } );
 
+const catalog = [
+	{
+		id: "neon",
+		name: "Неон",
+		image_path: "img/catalog/c1.jpg",
+		old_price: "120500 руб.",
+		new_price: "55490 руб.",
+	},
+	{
+		id: "standart",
+		name: "Штандарт",
+		image_path: "img/catalog/c2.jpg",
+		old_price: "112500 руб.",
+		new_price: "56690 руб.",
+	},
+	{
+		id: "dorry",
+		name: "Дорри",
+		image_path: "img/catalog/c3.jpg",
+		old_price: "84500 руб.",
+		new_price: "33690 руб.",
+	},
+	{
+		id: "savanna",
+		name: "Саванна",
+		image_path: "img/catalog/c4.jpg",
+		old_price: "80200 руб.",
+		new_price: "31890 руб.",
+	},
+	{
+		id: "scarlett",
+		name: "Скарлетт",
+		image_path: "img/catalog/c5.jpg",
+		old_price: "89400 руб.",
+		new_price: "42600 руб.",
+	},
+	{
+		id: "shale",
+		name: "Шале",
+		image_path: "img/catalog/c6.jpg",
+		old_price: "83500 руб.",
+		new_price: "40200 руб.",
+	},
+	{
+		id: "victoria",
+		name: "Виктория",
+		image_path: "img/catalog/c7.jpg",
+		old_price: "94800 руб.",
+		new_price: "57790 руб.",
+	},
+	{
+		id: "melange",
+		name: "Меланж",
+		image_path: "img/catalog/c8.jpg",
+		old_price: "88300 руб.",
+		new_price: "42600 руб.",
+	},
+	{
+		id: "rosinka",
+		name: "Росинка",
+		image_path: "img/catalog/c9.jpg",
+		old_price: "94200 руб.",
+		new_price: "50690 руб.",
+	},
+	{
+		id: "vector",
+		name: "Вектор",
+		image_path: "img/catalog/c10.jpg",
+		old_price: "97390 руб.",
+		new_price: "54600 руб.",
+	},
+	{
+		id: "classic",
+		name: "Классик",
+		image_path: "img/catalog/c11.jpg",
+		old_price: "103500 руб.",
+		new_price: "62090 руб.",
+	},
+	{
+		id: "lira",
+		name: "Лира",
+		image_path: "img/catalog/c12.jpg",
+		old_price: "99390 руб.",
+		new_price: "55900 руб.",
+	},
+]
+let store_wrapper = document.querySelector(".popup-box");
+
+class Store {
+	render() {
+		let htmlStore = '';
+		catalog.forEach(({id, name, image_path, old_price, new_price}) => {
+			htmlStore += `
+			<article class="popup" id="${id}">
+				<div class="popup__wrapper"> 
+					<div class="popup__content">
+						<img class="popup__image" src="${image_path}" alt="#">
+						<div class="popup__text">
+							<a href="#" class="popup__close close-popup">Х</a>
+							<h3 class="popup__title popup__features">Кухня ${name}</h3>
+							<p class="popup__old-price popup__features">Старая цена: ${old_price}</p>
+							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">${new_price}</span></p>
+							<a href="#popup_2" class="popup__order popup-link popup__features">Заказать</a>
+							<div class="popup__advantages-box">
+								<p class="popup__advantages popup__features">Доставка</p>
+								<p class="popup__advantages popup__features">Сборка</p>
+								<p class="popup__advantages popup__features">Самовывоз</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+		<!-- /.popup#${id} -->
+			`;
+		});
+		store_wrapper.innerHTML += htmlStore;
+	}
+}
+
+const catalogPage = new Store();
+catalogPage.render();
+
 let direct = document.querySelectorAll('.direct');
 let corner = document.querySelectorAll('.corner');
 let bar = document.querySelectorAll('.bar');
@@ -10939,7 +11062,7 @@ $(function() {
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
-const curentPopup = document.querySelector('.popup__wrapper');
+const curentPopup = document.querySelector('.popup__content');
 
 let unlock = true;
 
@@ -10979,7 +11102,7 @@ function popupOpen(curentPopup) {
 		}
 		curentPopup.classList.add('popup-open');
 		curentPopup.addEventListener("click", function(e) {
-			if (!e.target.closest('.popup__wrapper')) {
+			if (!e.target.closest('.popup__content')) {
 				popupClose(e.target.closest('.popup'));
 			}
 		});
