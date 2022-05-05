@@ -1,0 +1,28 @@
+//Обнуление
+@import "../../general/null";
+
+//Шрифты
+@import "../../general/fonts-pages";
+
+//Миксины и переменные
+@import "../../general/mixin";
+
+//Общие натройки контента
+@import "../../general/body";
+
+//Шапка главной страницы
+@import "../../main-page/header";
+
+//Стили общих секций
+@import "../../general/common-blocks";
+
+//Подвал
+@import "../../general/footer";
+
+//Страница об оплате
+@import "payment";
+
+//Страница об оплате на сайте
+@import "online-payment";
+
+

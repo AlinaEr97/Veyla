@@ -1,0 +1,26 @@
+
+/* Шрифты для страниц, кроме главной */
+
+@font-face {
+	font-family: 'Open Sans Regular';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('../../../fonts/OpenSans-Regular.woff') format('woff');
+}
+
+@font-face { 
+	font-family: 'Eagle Lake Regular';
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: url('../../../fonts/EagleLake-Regular.woff') format("woff");
+}
+
+@font-face {
+	font-family: 'Russo One';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('../../../fonts/RussoOne-Regular.woff') format('woff');
+}
