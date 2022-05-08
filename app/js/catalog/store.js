@@ -16,9 +16,9 @@ class Store {
 							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">${new_price}</span></p>
 							<a href="#popup_2" class="popup__order popup-link popup__features">Заказать</a>
 							<div class="popup__advantages-box">
-								<p class="popup__advantages popup__features popup__features_catalog">Доставка</p>
-								<p class="popup__advantages popup__features popup__features_catalog">Сборка</p>
-								<p class="popup__advantages popup__features popup__features_catalog">Самовывоз</p>
+								<p class="popup__advantages popup__features popup__advantages_catalog">Доставка</p>
+								<p class="popup__advantages popup__features popup__advantages_catalog">Сборка</p>
+								<p class="popup__advantages popup__features popup__advantages_catalog">Самовывоз</p>
 							</div>
 						</div>
 					</div>
