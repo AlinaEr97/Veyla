@@ -70,7 +70,7 @@
 	&__button {
 		@include button();
 		
-		@media (max-width: 991px) {
+		@media (max-width: 1025px) {
 			display: none;
 		}
 	}

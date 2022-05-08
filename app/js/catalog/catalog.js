@@ -10973,7 +10973,7 @@ class Store {
 		let htmlStore = '';
 		catalog.forEach(({id, name, image_path, old_price, new_price}) => {
 			htmlStore += `
-			<article class="popup" id="${id}">
+			<article class="popup popup_pages" id="${id}">
 				<div class="popup__wrapper"> 
 					<div class="popup__content">
 						<img class="popup__image" src="${image_path}" alt="#">
@@ -10984,9 +10984,9 @@ class Store {
 							<p class="popup__new-price popup__features">Цена со скидкой: <span class="popup__price">${new_price}</span></p>
 							<a href="#popup_2" class="popup__order popup-link popup__features">Заказать</a>
 							<div class="popup__advantages-box">
-								<p class="popup__advantages popup__features">Доставка</p>
-								<p class="popup__advantages popup__features">Сборка</p>
-								<p class="popup__advantages popup__features">Самовывоз</p>
+								<p class="popup__advantages popup__features popup__features_catalog">Доставка</p>
+								<p class="popup__advantages popup__features popup__features_catalog">Сборка</p>
+								<p class="popup__advantages popup__features popup__features_catalog">Самовывоз</p>
 							</div>
 						</div>
 					</div>
