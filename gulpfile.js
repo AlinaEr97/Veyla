@@ -372,7 +372,6 @@ exports.catalog_scripts_min = catalog_scripts_min;
 exports.pages_scripts = pages_scripts;
 exports.pages_scripts_min = pages_scripts_min;
 
-
 exports.build = build; 
 
 exports.default = parallel(main_sсripts, catalog_scripts, pages_scripts, browsersync, watching);
