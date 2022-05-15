@@ -13,6 +13,7 @@ _Главная страница сайта, окно браузера 1349×635
 Проект имеет два адреса на GitHub Pages:
 
 [https://alinaer97.github.io/Veyla/dist/index.html](https://alinaer97.github.io/Veyla/dist/index.html) - код стилей и скриптов сжаты;
+
 [https://alinaer97.github.io/Veyla/app/index.html](https://alinaer97.github.io/Veyla/app/index.html) - весь код в расширенном виде.
 
 __Особенности проекта:__
