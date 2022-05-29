@@ -11,21 +11,19 @@
 	}
 	
 	&__wrapper {
-		margin: auto;
 		display: flex;
 		align-items: flex-start;
-		justify-content: space-between;	
-	}
+		justify-content: center;	
+		gap: 10%;
 
-	&__offer {
-		display: block;
+		@media (max-width: 1366px) {
+			justify-content: space-between;
+			gap: 0;
+		}
 	}
 
 	&__bg {
-		padding: 0;
-		width: 800px;
 		min-height: 434px;
-		display: block;
 
 		@media (max-width: 700px) {
 			width: 500px;
@@ -71,11 +69,14 @@
 	}
 
 	&__text {
-		font-size: 30px;
+		font-size: 36px;
 		font-weight: bold;
 		margin: 120px 0px 40px 0px;
 		color: #0f1c30;
 
+		@media (max-width: 1366px) {
+			font-size: 30px;
+		}
 		@media (max-width: 1160px) {
 			font-size: 22px;
 		}

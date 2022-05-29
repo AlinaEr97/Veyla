@@ -4,7 +4,7 @@
 @mixin button() {
 	margin-left: 80px;
 	padding: 17px 22px;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bold;
 	color: white;
 	text-transform: uppercase;
@@ -20,6 +20,10 @@
 		transform: translate(0, 2px); 
 		transition: all .1s;
 	}
+
+	@media (max-width: 1366px) {
+		font-size: 14px;
+	}
 }
 
 %input-focus {
@@ -28,12 +32,17 @@
 }
 
 @mixin input() {
-	height: 40px;
+	height: 50px;
 	padding-left: 15px;
-	font-size: 16px;
+	font-size: 20px;
 	border: 1px solid rgb(98, 98, 138);
 	&:focus {
 		@extend %input-focus;
+	}
+
+	@media (max-width: 1366px) {
+		height: 40px;
+		font-size: 16px;
 	}
 }
 

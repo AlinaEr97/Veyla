@@ -343,10 +343,6 @@
 		object-position: left;
 
 		&_item {
-			width: 100%;
-			height: 350px;
-			object-fit: cover;
-			object-position: left;
 			
 			@media (max-width: 600px) {
 				margin: 0;
@@ -362,7 +358,7 @@
 	}
 
 	&__container {	
-		padding: 10px 20px 20px;
+		padding: 10px 20px 10px;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -372,7 +368,10 @@
 		left: 0px;
 		background-color: transparent;
 		box-shadow: inset 0px 70px 60px 70px rgba(0, 0, 0, 0.5);
-		
+
+		@media (max-width: 1366px) {
+			padding: 10px 20px 20px;
+		}
 		@media (max-width: 1000px) {
 			padding: 10px 10px 10px;
 		}
@@ -384,7 +383,18 @@
 		}
 		@media (max-width: 360px) {
 			padding: 5px 5px 10px;
-			
+		}
+
+		&_catalog {
+			@media (max-width: 1110px) {
+				padding: 10px 60px 10px;
+			}
+			@media (max-width: 600px) {
+				padding: 5px 10px 10px;
+			}
+			@media (max-width: 360px) {
+				padding: 5px 5px 10px;
+			}
 		}
 	}
 
@@ -399,10 +409,13 @@
 
 	&__kitchen {
 		margin-bottom: 15px;
-		font-size: 20px;
+		font-size: 24px;
 		letter-spacing: 3px;
 		color: white;
 
+		@media (max-width: 1366px) {
+			font-size: 20px;
+		}
 		@media (max-width: 1000px) {
 			font-size: 17px;
 		}
@@ -425,13 +438,27 @@
 			margin-bottom: 5px;
 			font-size: 12px;
 		}
+
+		&_catalog {
+			font-size: 20px;
+
+			@media (max-width: 440px) {
+				font-size: 12px;
+			}
+			@media (max-width: 360px) {
+				font-size: 10px;
+			}
+		}
 	}
 
 	&__name {
-		font-size: 38px;
+		font-size: 40px;
 		letter-spacing: 3px;
 		color:rgb(239, 228, 245);
 
+		@media (max-width: 1366px) {
+			font-size: 38px;
+		}
 		@media (max-width: 1000px) {
 			font-size: 32px;
 		}
@@ -454,21 +481,34 @@
 			font-size: 18px;
 			letter-spacing: 1px;
 		}
+
+		&_catalog {
+			font-size: 32px;
+
+			@media (max-width: 440px) {
+				font-size: 22px;
+			}
+			@media (max-width: 360px) {
+				font-size: 16px;
+			}
+		}
 	}
 
 	&__price {
 		margin-right: 40px;
-
 		display: flex;
 		flex-direction: column;
 	}
 
 	&__old-price {
 		margin-bottom: 12px;
-		font-size: 14px;
+		font-size: 18px;
 		letter-spacing: 3px;
 		color: rgb(194, 192, 192);
 
+		@media (max-width: 1366px) {
+			font-size: 14px;
+		}
 		@media (max-width: 1000px) {
 			margin-bottom: 6px;
 			font-size: 12px;
@@ -487,11 +527,19 @@
 			margin-bottom: 6px;
 			font-size: 11px;
 		}
+
+		&_catalog {
+			font-size: 14px;
+
+			@media (max-width: 360px) {
+				font-size: 10px;
+			}
+		}
 	}
 
 	&__false-number {
 		position: relative;
-		font-size: 18px;
+		font-size: 20px;
 		text-decoration: line-through;
 		&::after {
 			content: "";
@@ -499,10 +547,17 @@
 			width: 29px;
 			height: 16px;
 			position: absolute;
-			top: 4px;
-			left: 57px;
+			top: 6px;
+			left: 63px;
 		}
 
+		@media (max-width: 1366px) {
+			font-size: 18px;
+			&::after {
+				top: 4px;
+				left: 57px;
+			}
+		}
 		@media (max-width: 1000px) {
 			font-size: 16px;
 		}
@@ -528,8 +583,8 @@
 		@media (max-width: 500px) {
 			font-size: 14px;
 			&::after {
-				top: 3px;
-				left: 53px;
+				top: 2px;
+				left: 50px;
 			}
 		}
 		@media (max-width: 400px) {
@@ -539,7 +594,6 @@
 				height: 12px;
 				background-size: 22px;
 				top: 4px;
-				left: 50px;
 			}
 		}
 		@media (max-width: 360px) {
@@ -554,9 +608,15 @@
 		&_large {
 		
 			&::after {
-				left: 78px;
+				left: 84px;
 			}
 
+			@media (max-width: 1366px) {
+				
+				&::after {
+					left: 78px;
+				}
+			}
 			@media (max-width: 1000px) {
 				
 				&::after {
@@ -600,16 +660,41 @@
 			}
 		}
 		
-		
 		&_catalog {
+			font-size: 18px;
 
 			&::after {
+				top: 4px;
+				background: transparent url('../../../img/icons/ruble_unactive.png');
+			}
+			
+			@media (max-width: 440px) {
+				font-size: 12px;
+				&::after {
+					width: 22px;
+					height: 12px;
+					background-size: 22px;
+					top: 3px;
+					left: 46px;
+				}
+			}
+		}
+		
+		&_large-catalog {
+			font-size: 18px;
+			&::after {
+				top: 4px;
+				left: 80px;
 				background: transparent url('../../../img/icons/ruble_unactive.png');
 			}
 
-			@media (max-width: 400px) {
-			
+			@media (max-width: 440px) {
+				font-size: 12px;
 				&::after {
+					width: 22px;
+					height: 12px;
+					top: 3px;
+					left: 59px;
 					background-size: 22px;
 				}
 			}
@@ -617,11 +702,14 @@
 	}
 
 	&__new-price {
-		font-size: 14px;
+		font-size: 18px;
 		font-weight: bold;
 		color:rgb(239, 228, 245);
 		letter-spacing: 3px;
-	
+		
+		@media (max-width: 1366px) {
+			font-size: 14px;
+		}
 		@media (max-width: 1000px) {
 			font-size: 12px;
 		}
@@ -637,21 +725,37 @@
 		@media (max-width: 360px) {
 			font-size: 11px;
 		}
+
+		&_catalog {
+			font-size: 14px;
+
+			@media (max-width: 360px) {
+				font-size: 10px;
+			}
+		}
 	}
 
 	&__true-number {
 		position: relative;
-		font-size: 18px;
+		font-size: 20px;
 		&::after {
 			content: "";
 			background: transparent url('../../img/icons/ruble.png');
 			width: 29px;
 			height: 16px;
 			position: absolute;
-			top: 4px;
-			left: 67px;
+			top: 6px;
+			left: 73px;
 		}
 
+		@media (max-width: 1366px) {
+			font-size: 18px;
+			&::after {
+				top: 4px;
+				left: 67px;
+			}
+	
+		}
 		@media (max-width: 1000px) {
 			font-size: 16px;
 		}
@@ -677,7 +781,7 @@
 		@media (max-width: 500px) {
 			font-size: 14px;
 			&::after {
-				top: 3px;
+				top: 2px;
 				left: 53px;
 			}
 		}
@@ -700,15 +804,21 @@
 		}
 		
 		&_catalog {
-
+			font-size: 18px;
 			&::after {
+				top: 4px;
+				left: 70px;
 				background: transparent url('../../../img/icons/ruble.png');
 			}
 
-			@media (max-width: 400px) {
-			
+			@media (max-width: 440px) {
+				font-size: 12px;
 				&::after {
+					width: 22px;
+					height: 12px;
 					background-size: 22px;
+					top: 3px;
+					left: 50px;
 				}
 			}
 		}
@@ -741,7 +851,11 @@
 	}
 	
 	&_pages {
-		margin-top: 120px;
+		margin-top: 153px;
+
+		@media (max-width: 1366px) {
+			margin-top: 120px;
+		}
 		@media (max-width: 1000px) {
 			margin-top: 100px;
 		}
@@ -757,11 +871,11 @@
 	}
 
 	&__content {
-		max-width: 900px;
+		max-width: 1200px;
 		margin: 40px auto;
-		padding: 30px;
+		padding: 50px;
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
 		text-indent: 0;
 		background: white;
@@ -770,6 +884,11 @@
 		opacity: 0;
 		transition: all 0.8s ease 0s;
 
+		@media (max-width: 1366px) {
+			padding: 30px;
+			max-width: 900px;
+			justify-content: center;
+		}
 		@media (max-width: 1000px) {
 			padding: 10px;
 		}
@@ -779,11 +898,16 @@
 	}
 
 	&__image {
-		max-width: 430px;
-		height: 350px;
+		max-width: 600px;
+		height: 380px;
 		margin-left: -25px;
 		box-shadow: 20px 20px 10px 0 rgba(60, 70, 161, 0.5), -20px -20px 10px 0 rgba(158, 60, 161, 0.5);
 
+
+		@media (max-width: 1366px) {
+			max-width: 430px;
+			height: 350px;
+		}
 		@media (max-width: 1000px) {
 			width: 330px;
 			height: 260px;
@@ -816,10 +940,13 @@
 	}
 
 	&__text {
-		margin: 20px 0 20px 30px;	
+		margin: 20px 0 20px 0;	
 		display: flex;
 		flex-direction: column;
 		
+		@media (max-width: 1366px) {
+			margin: 20px 0 20px 30px;		
+		}
 		@media (max-width: 1000px) {
 			padding-left: 0;	
 		}

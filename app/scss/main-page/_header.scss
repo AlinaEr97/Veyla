@@ -40,10 +40,13 @@
 	&__phone {
 		margin-bottom: 10px;
 		display: block;
-		font-size: 20px;
+		font-size: 26px;
 		font-weight: bold;
 		color: #264981;
 		
+		@media (max-width: 1366px) {
+			font-size: 20px;
+		}
 		@media (max-width: 600px) {
 			font-size: 16px;
 		}
@@ -58,7 +61,11 @@
 	}
 
 	&__working-time {
-		
+		font-size: 18px;
+
+		@media (max-width: 1366px) {
+			font-size: 14px;
+		}
 		@media (max-width: 600px) {
 			font-size: 13px;
 		}
@@ -255,7 +262,7 @@
 	}
 
 	&__link {
-		font-size: 20px;
+		font-size: 24px;
 		color: white;
 		&:last-child {
 			margin-bottom: 5px;
@@ -264,6 +271,9 @@
 			color: #ec85fa;
 		}
 
+		@media (max-width: 1366px) {
+			font-size: 20px;
+		}
 		@media (max-width: 800px) {
 			font-size: 18px;
 		}

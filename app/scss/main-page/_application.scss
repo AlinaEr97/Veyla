@@ -19,11 +19,14 @@
 
 	&__wrapper {
 		padding: 40px 80px 10px 80px;
-		max-width: 1000px;
+		max-width: 1300px;
 		min-width: 300px;
 		background: #efe6f1 url('../../img/application/application-bg.png') no-repeat center right;
 		box-shadow: 10px 0 30px 0px rgba(117, 116, 116, 0.5);
 
+		@media (max-width: 1366px) {
+			max-width: 1000px;
+		}
 		@media (max-width: 768px) {
 			padding: 40px 40px 10px;
 			background-image: none;
@@ -66,7 +69,11 @@
 	&__label {
 		margin-bottom: 10px;
 		display: block;
-		font-size: 17px;
+		font-size: 20px;
+
+		@media (max-width: 1366px) {
+			font-size: 17px;
+		}
 	}
 
 	&__input {
@@ -74,13 +81,19 @@
 	}
 
 	&__select {
-		height: 30px;
-		max-width: 198px;
-		font-size: 16px;
+		height: 40px;
+		max-width: 228px;
+		font-size: 20px;
 		font-family: 'Open Sans Regular', sans-serif;
 		border: 1px solid rgb(98, 98, 138);
 		&:focus {
 			@extend %input-focus;
+		}
+
+		@media (max-width: 1366px) {
+			height: 30px;
+			max-width: 198px;
+			font-size: 16px;
 		}
 	}
 
